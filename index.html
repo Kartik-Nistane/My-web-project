@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+width:100%;
+  
+  position: relative;
+  background: linear-gradient(to right,#4444e2,rgb(81, 81, 239));
+  
+}
+.navbar .container1{  
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.navbar .container1 ul{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding-right: 140px;
+    color: black;
+ & li a{
+    justify-content: space-between;
+    margin:2.6rem;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    display: inline-block;
+    position: relative;
+    color:white;
+
+    &::after{
+      content:"";
+      position:absolute;
+    bottom:-0.3rem;
+    left:0;
+    width:0%;
+    border-bottom:0.2rem solid #ef0303;
+    transition: all 0.3s linear;
+  }
+}
+& li a:hover:after{
+  width:100%;
+}
+}
+.navbar .container1 img{
+  width:15rem;
+  height:3.4rem;
+  margin-left:5rem;
+ 
+  border-radius: 5px;
+  box-shadow: 7px 8px 15px rgb(248, 11, 7);
+}
+.section-hero{
+  width:100%;
+  height: auto;
+  
+}
+.section-hero .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+.section-hero .container .heading{
+  margin-top: 8rem;
+  font-weight: 900;
+  font-size: 60px;
+  font-family: 'popins',sans-serif;
+  text-shadow: 5px 2px 15px red;;
+}
+.section-hero .container .para{
+   font-size: 20px;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   margin-top: 3rem;
+   padding-left:30rem;
+   padding-right: 30rem;;
+   color:white;
+}
+.btn{
+  background-color:black;
+  width:10rem;
+  height:2rem;
+  font-size: 23px;
+  text-align: center;
+  border-radius: 5px;
+  margin-top:3rem;
+  transition: all 1s linear;
+  color:white;
+  text-decoration: none;
+  border: 2px solid #0000ff;
+  animation:ani 2s infinite;
+  z-index:1;
+}
+.btn:hover{
+  background-color: #e40def;
+  width:15rem;
+  background-color: darkviolet;
+}
+
+  main{
+    height:90vh;
+    position: relative;
+     
+      background: 
+      linear-gradient(rgba(77, 131, 240, 0.5), rgba(0, 0, 0, 0.5)), /* Semi-transparent gradient */
+      url('image2.webp'); /* Background image */
+    background-size: cover; /* Make the image cover the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+  
+  
+}
+
+.custom-shape-divider-bottom-1737775533 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1737775533 svg {
+  position: relative;
+  display: block;
+  width: calc(280% + 1.3px);
+  height: 500px;
+}
+
+.custom-shape-divider-bottom-1737775533 .shape-fill {
+  fill: #FFFFFF;
+}
+grid{
+  display: grid;
+  align-items: center;
+  gap:64px;
+}
+.grid-four--cols{
+  display: grid;
+  grid-template-columns:repeat(4,1fr);
+  justify-content: space-between;
+}
+.section-zero{
+  margin: 0rem 7rem;
+  margin-top: -3rem;
+  background-color: #edc5c5;
+}
+.section-zero .about-div{
+  padding: 3.4rem;
+
+  box-shadow: rgba(17, 95, 155, 0.3) 0px 1px 2px 0px,
+  rgba(50, 102, 142, 0.15) 0px 2px 6px 2px;
+
+  background-color:white;
+  transition: all 0.5s linear;
+  
+}
+.section-zero .about-div:hover{
+    transform: scale(1.1);
+}
+
+
+.section-zero .about-div .heading{
+   font-size:30px;
+   font-family: sans-serif;
+   font-weight:700;
+   margin-bottom: 3rem;
+}
+.section-zero .about-div .para{
+  font-size:20px;
+  font-weight: bold;
+}
+.section-zero .about-div .fa-solid {
+  /* padding: <top-and-bottom> <left-and-right>; */
+
+    padding:2rem;
+    margin:1rem;
+    background-color:#a1c0f5;
+    font-size:2.4rem;
+    border-radius: 50%;
+    color:orange;
+  }
+.section-zero .about-div:nth-child(1) .fa-solid{
+    color:red;
+    
+}
+.section-zero .about-div:nth-child(2) .fa-solid{
+  color:rgb(243, 38, 205);
+  background-color: #ddf650;
+}
+.section-zero .about-div:nth-child(3) .fa-solid{
+  color:red;
+  
+}
+.section-zero .about-div:nth-child(4) .fa-solid{
+  color:rgb(7, 43, 161);
+  background-color: #efb03a;
+}
+.custom-shape-divider-bottom-1737784548 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1737784548 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 229px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1737784548 .shape-fill {
+  fill: #395475;
+}
+.info{
+  width: 100%;
+  height:40vh;
+  background-color: rgb(252, 247, 247);
+}
+.info .content{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding-top:7rem;
+}
+.info .content .heading{
+  font-size: 35px;
+  font-family:cursive;
+  font-weight:800;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.info .content .para{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  padding-top: 2rem;
+}
+.info .content .form{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+.info .content input{
+  width:50%;
+  height:3rem;
+  border-radius: 40px;
+  padding-right: 2rem;
+  background-color: rgb(59, 3, 3);
+  overflow: hidden;
+}
+.info .content button{
+  width:8rem;
+  height: 3rem;
+  border-radius: 40px;
+  background-color: rgb(91, 91, 241);
+  z-index: 1;
+
+}
+.info .content button:hover{
+  background-color:red;
+  border:2px solid black;
+}
+.last{
+  width:100%;
+  height: 40vh;
+  background-color: #a1c0f5;
+}
+
+.grid-four--cols{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+ 
+}
+.last {
+  display: flex;
+  padding:5rem 7rem 0rem 7rem;
+  background-color: black;
+}
+.last .about .heading{
+  font-size: 30px;
+  font-family:system-ui;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: white;
+}
+.last .about ul li a{
+  text-decoration: none;
+  font-size:22px;
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
+  color:white;
+}
+.last .about .p1{
+  font-size:22px;
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
+  color:white;
+}
+.last .about .p2{
+  font-size:22px;
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
+  color:white;
+}
+.last .about .image {
+  padding-top: 2rem;
+  color:blue;
+  
+}
+.last .about .image .fa-brands{
+  padding:8px;
+  justify-content: space-between;
+  
+  background-color: rgb(246, 27, 140);
+  border-radius: 50%;
+  color:white;
+}
+.copy{
+   width:100%;
+   height:5vh;
+  background-color: black;
+}
+.copy .text{
+  color:white;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.hr{
+  color:red;
+}
+
+    </style>
+</head>
+<body>
+
+  <!-- <img src="image2.webp" alt="vmbv"> -->
+    <header class="navbar">
+       <div class="container1">
+           <img src="moderna.jpeg" alt="my img">
+           <ul style="list-style-type: none;">
+            <li class="list"><a href="#">home</a></li>
+            <li class="list"><a href="#">about</a></li>
+            <li class="list"><a href="#">services</a></li>
+            <li class="list"><a href="#">team</a></li>
+            <li class="list"><a href="#">blog</a></li>
+            <li class="list"><a href="#">dropdown</a></li>
+            <li class="list"><a href="#">contact </a></li>
+   
+           </ul>
+       </div> 
+    </header>
+    <main>
+         <div class="section-hero">
+            <div class="container">
+            <h1 class="heading">Welcome to Moderna</h1>
+            <p class="para">"Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.".</p>
+            <a  class="btn" href="#"> Learn More</a>
+            </div>
+         </div>
+         <div class="custom-shape-divider-bottom-1737775533">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </main>
+    <div class="section-zero">
+            <div class="container grid grid-four--cols">
+                <div class="about-div">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    <h2 class="heading">Nescuit Mete</h2>
+                   
+                    <p class="para">Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+                </div>
+                <div class="about-div">
+                    <i class="fa-solid fa-wifi"></i>
+                    <h2 class="heading">Eosle Commodi</h2>
+                    <p class="para">Ut autem aut autem non a: Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+                </div>
+                <div class="about-div">
+                    <i class="fa-solid fa-table"></i>
+                    <h2 class="heading">Ledo Markt</h2>
+                    <p class="para">
+                        Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti</p>
+                </div>
+                <div class="about-div">
+                    <i class="fa-solid fa-chalkboard"></i>
+                    <h2 class="heading">Asperiores </h2>
+                    <p class="para">Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+                </div>
+            </div>    
+                
+    </div>
+    <main2>
+        <div class="info">
+            <div class="content">
+                <h1 class="heading">Join Our Newsletter  </br></h1>
+        
+                <p class="para">Subscribe to our newsletter and receive the latest news about our products and services!</p>
+            <form class="form">
+                <label for="userinput" ></label>
+                <input type="text" id="userinput" name="userinput" placeholder="your opinion">
+                <button class="button" type="submit">Submit</button>
+            </form>
+            </div>    
+        </div>
+
+        <div class="last">
+            <div class=" grid-four--cols">
+               <div class="about">
+                  <div class="p1">
+                    <div class="heading">Moderna</div>
+                    <div class="para">A108 Adam Street
+
+                        New York, NY 535022</div>
+                    
+                    <div class="para1">Phone: +1 5589 55488 55</div>
+                    <div class="para2">Email: info@example.com</div>
+                   </div> 
+               </div>
+
+               <div class="about">
+                <div class="heading">Useful Links</div>
+                <ul style="list-style-type: none">
+                    <li><a href="#">> Home</a></li>
+                    <li><a href="#">> About</a></li>
+                    <li><a href="#">> Services</a></li>
+                    <li><a href="#">> Term of services</a></li>
+                </ul>
+            
+            </div>
+               <div class="about">
+                <div class="heading">Our Services</div>
+                
+                <ul style="list-style-type: none">
+                    <li><a href="#">> Web design</a></li>
+                    <li><a href="#">> Web developement</a></li>
+                    <li><a href="#">> Product management</a></li>
+                    <li><a href="#">> Marketing</a></li>
+                </ul>
+               </div>
+           
+               <div class="about">
+                <div class="p2">
+                 <div class="heading">Follows us</div>
+                 <div 
+                    class="para">Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies
+                 </div>
+                 <div class="image">
+                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                     
+                    <a href="https://facebook.com/"> <i class="fa-brands fa-facebook"></i>   </a>            
+                    
+                   <a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram"></i></a>
+                   <a href="https://www.linkedin.com/login/">
+                    <i class="fa-brands fa-linkedin"></i></a>
+                 </div>
+                 </div>
+               </div>
+            </div>   
+        
+       
+        </div>
+    </hr>
+    </main2>
+    <div class="hr"><hr/></div>
+    <div class="copy">
+        <div class="text">© Copyright Moderna All Rights Reserved</div>
+    </div>
+</body>
+</html>
